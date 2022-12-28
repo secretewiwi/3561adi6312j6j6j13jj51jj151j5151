@@ -9,7 +9,7 @@ local script_version_number = "v1"
 local game_name = "Quarantine-z"
 
 --//Variables\\--
-
+local HttpService = game:GetService("HttpService");
 local Players = game:GetService("Players");
 local LocalPlayer = Players.LocalPlayer;
 local Mouse = LocalPlayer:GetMouse();
@@ -87,7 +87,7 @@ end
 
 local Window = Library:CreateWindow({
 
-    Title = '⚫ BlvckWare ⚫ ',
+    Title = '⚫ BlvckWare ⚫ | Credits Eddie & Blvck ',
     Center = true, 
     AutoShow = true,
 })
@@ -1068,7 +1068,7 @@ Options.ASSSS:OnChanged(function(t)
     _Aimbot["AimSmooth"] = t/10
 end)
 --aimbot
-Library:SetWatermark('⚫ BlvckWare ⚫ | ".. game_name .." | ".. script_version_number .." ')
+Library:SetWatermark('⚫ BlvckWare ⚫ | " .. game_name .. " | " .. script_version_number .. " ')
 
 Library.KeybindFrame.Visible = true; 
 
@@ -1104,3 +1104,7 @@ SaveManager:BuildConfigSection(Tabs['Settings'])
 
 
 ThemeManager:ApplyToTab(Tabs['Settings'])
+
+Library:Notify('Loaded!')
+Library:Notify('Made by Blvck')
+Library:Notify('Credits to Eddie & Blvck')
